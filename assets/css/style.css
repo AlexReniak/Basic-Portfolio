@@ -1,6 +1,11 @@
 *{
   box-sizing:border-box;
 }
+
+.align {
+  width: 70%;
+}
+
 body {
   font-family: sans-serif;
   background: #e6e6e6;
