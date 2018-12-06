@@ -1,36 +1,47 @@
+*{
+  box-sizing:border-box;
+}
 body {
   font-family: sans-serif;
   background: #e6e6e6;
 }
 
 .header {
-  padding:5px;
   background: white;
   width: 100%;
   border-bottom: solid 2px;
   border-color: #d9d9d9;
 }
 
+header {
+  width: 960px;
+  margin: 0 auto;
+}
+
 .name {
-  padding: 15px;
+  padding: 23px;
+  padding-left: 20px;
   background: #00b3b3;
   color: white;
-  width: 200px;
-  position: relative;
-  left: 100px;
+  float: left;
 }
 
 .header-right {
-  float: left;
   font-family: sans-serif;
-  position: absolute;
-  right: 20%;
-  top: 60px;
+  float: right;
+  padding-right: 50px;
+  padding-top: 30px;
 }
 
 a {
   text-decoration: none;
   color: #a6a6a6;
+}
+
+header::after {
+  content: "";
+  display: block;
+  clear:both;
 }
 
 h3 {
@@ -44,12 +55,13 @@ h3 {
   border-bottom: solid;
   border-color: #d9d9d9;
   padding-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .contact-info {
   background: white;
   width: 70%;
-  height: 40%;
+  height: 50%;
   position: relative;
   left: 115px;
   top: 50px;
@@ -59,19 +71,32 @@ h3 {
 form{
   color: #808080
 }
+input {
+  margin: 5px;
+}
+
+.messagebox {
+  height: 200px;
+  width: 60%;
+}
 
 #submit {
+  margin-top: 10px;
   padding: 10px;
   background: #00b3b3;
   color: white;
 }
 
 #footer {
+  clear: both;
   text-align: center;
   background: #737373;
   color: #bfbfbf;
   padding: 15px;
   border-top: solid 5px;
   border-color: #00b3b3;
-  Margin-top: 60px
+  Margin-top: 60px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
